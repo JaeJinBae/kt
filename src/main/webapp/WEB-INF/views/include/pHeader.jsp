@@ -1,6 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <style>
+	.telInfo{
+		background: #ed1c24;
+		text-align: center;
+	}
+	.telInfo > p{
+		width:1100px;
+		margin:0 auto;
+		text-align:right;
+		color:#fff;
+		font-size:17px;
+		line-height: 45px;
+	}
 	.headerWrap{
 		width:100%;
 		min-width:1100px;
@@ -79,6 +91,10 @@
 		});
 	});
 </script>
+<div class="telInfo">
+	<p>맞춤 보안 상담 &nbsp;&nbsp;053 - 636 - 2002</p>
+	<%-- <img src="${pageContext.request.contextPath}/resources/images/test.png"> --%>
+</div>
 <div class="headerWrap">
 	<div class="wrapDiv">
 		<div class="wrapDiv2">
@@ -148,6 +164,7 @@
 					</li>
 				</ul>
 			</div><!-- mainNavWrap end -->
+			
 		</div><!-- wrapDiv2 end -->
 	</div><!-- wrapDiv end -->
 </div><!-- headerWrap end -->
