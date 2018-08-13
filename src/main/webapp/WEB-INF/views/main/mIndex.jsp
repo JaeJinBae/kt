@@ -10,16 +10,16 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=1"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style type="text/css">
 	body{
 		position: relative;
 	}
 	header{
 		width:100%;
-		min-width:1100px;
 		border-bottom:1px solid red;
 		background: #fafafa;
-		position: relative;
+		position: fixed;
 		z-index: 9;
 	}
 	.slick-dots{
@@ -27,12 +27,8 @@
 	}
 	section{
 		width:100%;
-		min-width:1100px;
 		margin:0 auto;
-		position: absolute;
-		top:128px;
-		z-index: 2;
-		/* margin-bottom:30px; */
+		padding-top:52px;
 	}
 	footer{
 		width:100%;
@@ -41,76 +37,64 @@
 	}
 	.mainSlider{
 		width:100%;
-		height:392px;
 	}
 	.mainSlider div{
 		width:100%;
-		height:392px;
 	}
 	.mainSlider img{
-		width:1100px;
-		margin:0 auto;
-	}
-	.mainSlider1{
 		width:100%;
-		background: url("${pageContext.request.contextPath}/resources/images/mainSlider01.jpg") no-repeat 50% 50%;
-	}
-	.mainSlider2{
-		background: url("${pageContext.request.contextPath}/resources/images/mainSlider02.jpg") no-repeat 50% 50%;
-	}
-	.mainSlider3{
-		background: url("${pageContext.request.contextPath}/resources/images/mainSlider03.jpg") no-repeat 50% 50%;
-	}
-	.mainSlider4{
-		background: url("${pageContext.request.contextPath}/resources/images/mainSlider04.jpg") no-repeat 50% 50%;
+		margin:0 auto;
 	}
 	.slick-dotted.slick-slider{
 		margin-bottom:0;
 	}
 	.call{
 		width:100%;
-		height:100px;
-		background: url("${pageContext.request.contextPath}/resources/images/mainTopbg_rg_b.jpg") no-repeat 50% 50%;
+		height:80px;
+		background: red;
 	}
 	.callInnerDiv{
-		max-width:1100px;
-		height:100px;
+		width:100%;
+		height:80px;
 		margin:0 auto;
-		background: url("${pageContext.request.contextPath}/resources/images/mainTopbg_rg.jpg") no-repeat 50% 50%;
+		/* background: url("${pageContext.request.contextPath}/resources/images/mainTopbg_rg.jpg") no-repeat 50% 50%; */
 		position: relative;
 	}
 	.callInnerDiv > img{
 		position: absolute;
-		top:15px;
-		left:70px;
+		top:11px;
+		left:10px;
+		width:150px;
 	}
 	.callInnerDiv > h1{
 		color:#fff;
 		position: absolute;
-		top:15px;
-		left:400px;
-		font-size:45px;
+		top:38px;
+		right:26px;
+		font-size:22px;
 	}
 	.callInnerDiv > a{
 		color:#fff;
 		position: absolute;
-		right:110px;
-		top:10px;
-		font-size:25px;
+		right:20px;
+		top:15px;
+		font-size:22px;
 		text-align: center;
+		line-height:25px;
+		font-weight:600;
 	}
 	.callInnerDiv > a:hover{
 		color:red;
 		font-weight:bold;
 	}
 	.contentWrap{
-		width:1100px;
+		width:100%;
 		margin:0 auto;
 		overflow:hidden;
 		margin-top:10px;
 	}
 	.leftContent{
-		width:740px;
+		width:100%;
 		float:left;
 	}
 	.leftContent > ul{
@@ -134,24 +118,25 @@
 		display:inline-block;
 		width:100%;
 		color:white;
-		font-size:20px;
+		font-size:16px;
 		line-height:45px;
 	}
 	.security{
 		width:99.9%;
 		height:329px;
-		background: url("${pageContext.request.contextPath}/resources/images/mainTab_img01.jpg") no-repeat;
 		overflow:hidden;
+	}
+	.security > img{
+		width:100%;
 	}
 	.security{
 		display:none;
 	}
 	.securityText{
-		width:33.33%;
-		height:100%;
-		background: rgba(255, 255, 255, 0.8);
-		float:right;
-		padding:20px 15px;
+		width:100%;
+		/* height:100%; */
+		background: #f1f1f1;
+		padding:20px 10px;
 		position: relative;
 	}
 	.securityText > h2{
@@ -166,9 +151,9 @@
 		height:35px;
 		border:1px solid black;
 		padding-left:15px;
-		/* margin-top:40px; */
 		position:absolute;
-		bottom:85px;
+		top:25px;
+		right:20px;
 	}
 	.moreInfo > a{
 		display:inline-block;
@@ -185,10 +170,11 @@
 		font-size:24px;
 	}
 	.rightContent{
-		float:right;
 		width:340px;
+		margin: 0 auto;
 		border:1px solid #f1f1f1;
 		text-align: center;
+		clear:both;
 	}
 	.rightContent > h2{
 		background: #ed1c24;
@@ -248,38 +234,50 @@
 		font-size: 15px;
 		font-weight: 500;
 		cursor:pointer;
+		-webkit-appearance: none;
+		-webkit-border-radius: 5px;
 	}
 	.bottomContent{
-		width:100%;
-		float:left;
-		text-align:center;
+		width:232px;
+		margin:0 auto;
 		margin-top:25px;
 	}
-	.bottomContent > a > img{
-		width:217px;
+	.slick-prev:before, .slick-next:before {
+		color:black;
+		font-size:30px;
 	}
-	.bottomContent > a:first-child > img{
-		border: 1px solid #f3f3f3;
+	.slick-prev{
+		left:-35px;
+	}
+	.slick-next{
+		right:-35px;
+	}
+	.slick-prev, .slick-next{
+		width:30px;
+		height:30px;
 	}
 	.bottom{
 		width:100%;
-		height:150px;
+		height:105px;
 		margin-top:30px;
 		background: #f2f2f2;
 	}
 	.bottom > ul{
-		width:1100px;
+		width:100%;
 		margin:0 auto;
-		text-align: center;
 	}
 	.bottom > ul > li{
 		display:inline-block;
-		width:19.8%;
+		width:19%;
 		text-align: center;
-		margin-top:30px;
+		margin-top:20px;
+	}
+	.bottom > ul > li > img{
+		width:45px;
 	}
 	.bottom > ul > li:first-child > img{
 		margin-top:10px;
+		width:75px;
 	}
 </style>
 <script>
@@ -294,6 +292,17 @@
 			autoplaySpeed:4000,
 			dots:true,
 		});
+		
+		$(".bottomContent").slick({
+			arrows:true,
+			infinite:true,
+			speed:500,
+			fade:true,
+			cssEase:'linear',
+			autoplay:true,
+			autoplaySpeed:4000,
+			dots:false
+		});
 		$(".security").eq(0).css("display","block");
 		$(".leftContent > ul > li").click(function(){
 			var index=$(this).index();
@@ -303,23 +312,15 @@
 			
 			$(".security").css("display","none");
 			$(".security").eq(index).css("display","block");
-			
-			if(index==0){
-				$(".security").css("background","url('${pageContext.request.contextPath}/resources/images/mainTab_img01.jpg') no-repeat");
-			}else if(index==1){
-				$(".security").css("background","url('${pageContext.request.contextPath}/resources/images/mainTab_img02.jpg') no-repeat");
-			}else if(index==2){
-				$(".security").css("background","url('${pageContext.request.contextPath}/resources/images/mainTab_img03.jpg') no-repeat");
-			}
 		});
 	});
 </script>
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pHeader.jsp"></jsp:include>
+		<jsp:include page="../include/mHeader.jsp"></jsp:include>
 	</header>
-	<section>
+	<section id="main">
 		<div class="mainSlider">
 			<div class="mainSlider1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider11.jpg"></div>
 			<div class="mainSlider2"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>
@@ -330,7 +331,7 @@
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
 				<h1>053 - 636 - 2002</h1>
-				<a href="">가입상담문의<br>바로가기</a>
+				<a href="">가입상담 바로가기</a>
 			</div> 
 		</div>
 		<div class="contentWrap">
@@ -341,6 +342,7 @@
 					<li><a href="#none">가정 보안</a></li>
 				</ul>
 				<div class="security">
+				<img src="${pageContext.request.contextPath}/resources/images/mainTab_img01.jpg">
 					<div class="securityText">
 						<h2>매장 보안</h2>
 						<p>
@@ -353,6 +355,7 @@
 					</div>
 				</div><!-- security end -->
 				<div class="security">
+					<img src="${pageContext.request.contextPath}/resources/images/mainTab_img02.jpg">
 					<div class="securityText">
 						<h2>기업 보안</h2>
 						<p>
@@ -365,6 +368,7 @@
 					</div>
 				</div><!-- security end -->
 				<div class="security">
+					<img src="${pageContext.request.contextPath}/resources/images/mainTab_img03.jpg">
 					<div class="securityText">
 						<h2>가정 보안</h2>
 						<p>
@@ -410,11 +414,11 @@
 				</div>
 			</div><!-- rightContent end -->
 			<div class="bottomContent">
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg01.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg02.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg03.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg04.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg05.jpg"></a>
+				<div><a href="#none"><img style="border:1px solid #f1f1f1; width:231px;" src="${pageContext.request.contextPath}/resources/images/mainBottomImg01.jpg"></a></div>
+				<div><a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg02.jpg"></a></div>
+				<div><a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg03.jpg"></a></div>
+				<div><a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg04.jpg"></a></div>
+				<div><a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg05.jpg"></a></div>
 			</div>
 		</div><!-- contentWrap end -->
 		<div class="bottom">
@@ -427,7 +431,7 @@
 			</ul>
 		</div>
 		<footer>
-			<jsp:include page="../include/pFooter.jsp"></jsp:include>
+			<%-- <jsp:include page="../include/pFooter.jsp"></jsp:include> --%>
 		</footer>
 	</section>
 	

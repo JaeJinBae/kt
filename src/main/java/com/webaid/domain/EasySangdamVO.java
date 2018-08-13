@@ -3,6 +3,7 @@ package com.webaid.domain;
 public class EasySangdamVO {
 	private String writer;
 	private String call;
+	private String time;
 	private String title;
 	private String content;
 
@@ -20,6 +21,14 @@ public class EasySangdamVO {
 
 	public void setCall(String call) {
 		this.call = call;
+	}
+
+	public String getTime() {
+		return time;
+	}
+
+	public void setTime(String time) {
+		this.time = time;
 	}
 
 	public String getTitle() {
@@ -40,7 +49,10 @@ public class EasySangdamVO {
 
 	@Override
 	public String toString() {
-		return "EasySangdamVO [writer=" + writer + ", call=" + call + ", title=" + title + ", content=" + content + "]";
+		return "EasySangdamVO [writer=" + writer + ", call=" + call + ", time=" + time + ", title=" + title
+				+ ", content=" + content + "]";
 	}
+
+	
 
 }

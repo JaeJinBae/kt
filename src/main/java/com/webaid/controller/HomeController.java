@@ -11,9 +11,12 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeUtility;
+import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.mobile.device.Device;
+import org.springframework.mobile.device.DeviceUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,14 +32,27 @@ public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Model model) {
-		logger.info("pcHome GET");
-
-		return "main/index";
+	public String home(HttpServletRequest req,Model model) {
+		logger.info("deviceCheck.");
+		
+		Device device=DeviceUtils.getCurrentDevice(req);
+		String deviceType="unknown";
+		
+		if(device == null){
+			deviceType="unknown";
+			logger.info(deviceType);			
+			return "main/index";
+		}
+		if(device.isMobile()){
+			deviceType="mobile";
+			logger.info(deviceType);			
+			return "main/mIndex";
+		}else{
+			deviceType="normal";
+			logger.info(deviceType);			
+			return "main/index";
+		}
 	}
 
 	@RequestMapping(value = "sendMail", method = RequestMethod.POST)
@@ -95,7 +111,13 @@ public class HomeController {
 		} catch (MessagingException e) {
 			e.printStackTrace();
 		}
-
+	}
+	
+	@RequestMapping(value = "/menu1_1", method = RequestMethod.GET)
+	public String menu1_1(HttpServletRequest req,Model model) {
+		logger.info("deviceCheck.");
+		
+		return "menu01/menu01_1";
 	}
 
 }
