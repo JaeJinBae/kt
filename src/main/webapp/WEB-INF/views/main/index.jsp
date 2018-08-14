@@ -348,7 +348,7 @@
 							여러분의 비즈니스 경쟁력을 한층 더 높여 드립니다.
 						</p>
 						<div class="moreInfo">
-							<a href="">자세히보기 <span>+</span></a>
+							<a href="${pageContext.request.contextPath}/menu1_2">자세히보기 <span>+</span></a>
 						</div>
 					</div>
 				</div><!-- security end -->
@@ -360,7 +360,7 @@
 							업무환경을 보장하는 통합관리 서비스를 제공하여 효율적인 사업 웅영이 가능합니다.
 						</p>
 						<div class="moreInfo">
-							<a href="">자세히보기 <span>+</span></a>
+							<a href="${pageContext.request.contextPath}/menu2_1">자세히보기 <span>+</span></a>
 						</div>
 					</div>
 				</div><!-- security end -->
@@ -372,7 +372,7 @@
 							가격의 전문 보안 서비스로 여러분의 삶의 질을 높여 드립니다.
 						</p>
 						<div class="moreInfo">
-							<a href="">자세히보기 <span>+</span></a>
+							<a href="${pageContext.request.contextPath}/menu1_1">자세히보기 <span>+</span></a>
 						</div>
 					</div>
 				</div><!-- security end -->

@@ -196,5 +196,82 @@ public class HomeController {
 		
 		return "menu02/menu02_6";
 	}
+	
+	@RequestMapping(value = "/menu3_1", method = RequestMethod.GET)
+	public String menu3_1(HttpServletRequest req,Model model) {
+		logger.info("menu03_01");
+		
+		return "menu03/menu03_1";
+	}
+	
+	@RequestMapping(value = "/menu3_2", method = RequestMethod.GET)
+	public String menu3_2(HttpServletRequest req,Model model) {
+		logger.info("menu03_02");
+		
+		return "menu03/menu03_2";
+	}
+	
+	@RequestMapping(value = "/menu4_1", method = RequestMethod.GET)
+	public String menu4_1(HttpServletRequest req,Model model) {
+		logger.info("menu04_01");
+		
+		return "menu04/menu04_1";
+	}
+	
+	@RequestMapping(value = "/menu4_2", method = RequestMethod.GET)
+	public String menu4_2(HttpServletRequest req,Model model) {
+		logger.info("menu04_02");
+		
+		return "menu04/menu04_2";
+	}
+	
+	@RequestMapping(value = "/menu4_3", method = RequestMethod.GET)
+	public String menu4_3(HttpServletRequest req,Model model) {
+		logger.info("menu04_03");
+		
+		return "menu04/menu04_3";
+	}
+	
+	@RequestMapping(value = "/menu4_4", method = RequestMethod.GET)
+	public String menu4_4(HttpServletRequest req,Model model) {
+		logger.info("menu04_04");
+		
+		return "menu04/menu04_4";
+	}
+	
+	@RequestMapping(value = "/menu4_5", method = RequestMethod.GET)
+	public String menu4_5(HttpServletRequest req,Model model) {
+		logger.info("menu04_05");
+		
+		return "menu04/menu04_5";
+	}
+	
+	@RequestMapping(value = "/menu4_6", method = RequestMethod.GET)
+	public String menu4_6(HttpServletRequest req,Model model) {
+		logger.info("menu04_06");
+		
+		return "menu04/menu04_6";
+	}
 
+	@RequestMapping(value = "/menu5_1", method = RequestMethod.GET)
+	public String menu5_1(HttpServletRequest req,Model model) {
+		logger.info("menu05_01");
+		
+		return "menu05/menu05_1";
+	}
+	
+	@RequestMapping(value = "/menu5_2", method = RequestMethod.GET)
+	public String menu5_2(HttpServletRequest req,Model model) {
+		logger.info("menu05_02");
+		
+		return "menu05/menu05_2";
+	}
+	
+	@RequestMapping(value = "/menu5_3", method = RequestMethod.GET)
+	public String menu5_3(HttpServletRequest req,Model model) {
+		logger.info("menu05_03");
+		
+		return "menu05/menu05_3";
+	}
+	
 }

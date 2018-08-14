@@ -163,7 +163,7 @@
 					<li><a href="${pageContext.request.contextPath}/menu2_1">- 빌딩</a></li>
 					<li><a href="${pageContext.request.contextPath}/menu2_2">- 공공기관</a></li>
 					<li><a href="${pageContext.request.contextPath}/menu2_3">- 대학교</a></li>
-					<li><a href="${pageContext.request.contextPath}/menu2_4">- 공장/창고</a></li>
+					<li><a href="${pageContext.request.contextPath}/menu2_4">- 공장&창고</a></li>
 					<li><a href="${pageContext.request.contextPath}/menu2_5">- 금융</a></li>
 					<li><a href="${pageContext.request.contextPath}/menu2_6">- 프렌차이즈</a></li>
 				</ul>
