@@ -12,6 +12,7 @@
 		color:#fff;
 		font-size:17px;
 		line-height: 45px;
+		padding-right:20px;
 	}
 	.headerWrap{
 		width:100%;
