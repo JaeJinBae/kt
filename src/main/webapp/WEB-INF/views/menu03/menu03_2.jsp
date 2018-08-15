@@ -103,8 +103,8 @@
 	.subTitle{
 		border-bottom:2px solid #666;
 		padding-bottom:15px;
-		margin-top:40px;
-		margin-bottom:35px;
+		margin-top:60px;
+		margin-bottom:30px;
 	}
 	.subTitle > h3{
 		font-weight:600;
@@ -112,22 +112,96 @@
 	.content01{
 		width:100%;
 	}
-	
+	.content01 ul{
+		width:100%;
+	}
+	.iconUl{
+		overflow:hidden;
+	}
+	.iconUl > li{
+		float:left;
+		width:16.6%;
+		text-align: center;
+	}
+	.iconUl > li > p{
+		font-size:16px;
+		font-weight:500;
+	}
+	.serviceText{
+		margin-top:30px;
+		background: #f1f1f1;
+		padding:15px 5px;
+	}
+	.serviceText > li{
+		width:100%;
+		font-size:14px;
+	}
 	.red{
 		color:red;
+	}
+	.dot{
+		font-size:20px;
+		color:red;
+		margin-right:2px;
+	}
+	.boldText{
+		font-weight:bold;
+		font-weight:800;
+	}
+	.normalText{
+		margin-left:10px;
 	}
 	.content02{
 		width:100%;
 	}
-	.content02 > img{
+	.content02 > p{
+		font-size:16px;
+	}
+	.content02 > ul{
+		width:100%;
+		overflow:hidden;
+	}
+	.content02 > ul > li{
+		width:50%;
+		float:left;
+		margin-top:20px;
+	}
+	.content02 > ul > li > img{
 		width:100%;
 	}
 	.content03{
 		width:100%;
+		overflow:hidden;
 	}
-	.content03 > img{
+	.content03 > ul > li{
+		float:left;
+		width:33%;
+	}
+	.content03 > ul > li:nth-child(2){
+		margin:0 4.5px;
+	}
+	.content03 > ul > li > img{
 		width:100%;
 	}
+	.content03 > ul > li > p, h4{
+		width:98%;
+		margin: 0 auto;
+		margin-top:15px;
+	}
+	.content03 > ul > li > h4{
+		line-height:21px;
+		height:41px;
+	}
+	.content03 > ul > li > p{
+		font-size:15px;
+	}
+	.content04{
+		width:100%;
+	}
+	.content04 > img{
+		width:100%;
+	}
+	
 	
 </style>
 </head> 
@@ -183,10 +257,10 @@
 							<p>영상저장(DVR/SD카드)</p>
 						</li>
 					</ul>
-					<ul>
+					<ul class="serviceText">
 						<li>
 							<span class="dot">·</span><span class="boldText">침입감지</span>
-							<span class="normalText">영상센서와 방범센서가 결합된 듀얼센서가 침입상황을 보다 정확하게 판별하여 내부의 위험요소를 사전에 제거하고, 외부의 침입을 차단하는 서비스</span>
+							<span class="normalText">영상센서와 방범센서가 결합된 듀얼센서가 침입상황을 정확하게 판별하여 내부의 위험요소를 사전에 제거, 외부의 침입을 차단하는 서비스</span>
 						</li>
 						<li>
 							<span class="dot">·</span><span class="boldText">출동서비스</span>
@@ -229,17 +303,17 @@
 					<ul>
 						<li>
 							<img src="${pageContext.request.contextPath}/resources/images/menu03_02recommend01.jpg">
-							<h5><span class="red">사업장 환경에 꼭 맞는 보안서비스가 필요한 고객님</span></h5>
+							<h4><span class="red">사업장 환경에 꼭 맞는 보안서비스가 <br>필요한 고객님</span></h4>
 							<p>전문보안컨설팅으로 고객사업장 환경에 맞는 서비스를 설계하여 제공합니다!</p>
 						</li>
 						<li>
 							<img src="${pageContext.request.contextPath}/resources/images/menu03_02recommend02.jpg">
-							<h5><span class="red">보안서비스의 가격이 부담되는 고객님</span></h5>
+							<h4><span class="red">보안서비스의 가격이 부담되는 고객님</span></h4>
 							<p>방범서비스와 고화질 영상보안서비스 및 다양한 케어서비스까지 합리적인 요금으로 이용하세요!</p>
 						</li>
 						<li>
 							<img src="${pageContext.request.contextPath}/resources/images/menu03_02recommend03.jpg">
-							<h5><span class="red">보안서비스 외에 다양한 케어서비스를 받고 싶은 고객님</span></h5>
+							<h4><span class="red">보안서비스 외에 다양한 케어서비스를 <br>받고 싶은 고객님</span></h4>
 							<p>공구대여, 정기순찰 및 전등제어, 화재감시 등 다양한 케어/편의 서비스를 함께 이용하세요!</p>
 						</li>
 					</ul>

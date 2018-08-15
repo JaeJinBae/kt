@@ -104,8 +104,8 @@
 	.subTitle{
 		border-bottom:2px solid #666;
 		padding-bottom:15px;
-		margin-top:40px;
-		margin-bottom:35px;
+		margin-top:60px;
+		margin-bottom:30px;
 	}
 	.subTitle > h3{
 		font-weight:600;
