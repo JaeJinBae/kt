@@ -163,6 +163,7 @@
 		width:100%;
 		overflow:hidden;
 		margin-top:13px;
+		font-size:18px;
 	}
 	.dot{
 		color:red;
@@ -171,13 +172,12 @@
 		margin-right:7px;
 		font-size:16px;
 	}
-	.content03 > ul > li > p{
-		width:97%;
-		font-size:15px;
-		float:left;
+	.small_ul{
+		margin-left:15px;
+		margin-top:5px;
 	}
-	.content03 > img{
-		float:right;
+	.small_ul > li{
+		font-size:15px;
 	}
 	.content04{
 		width:100%;
