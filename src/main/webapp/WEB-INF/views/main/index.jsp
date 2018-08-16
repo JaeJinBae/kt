@@ -410,18 +410,18 @@
 				</div>
 			</div><!-- rightContent end -->
 			<div class="bottomContent">
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg01.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg02.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg03.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg04.jpg"></a>
-				<a href="#none"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg05.jpg"></a>
+				<a href="${pageContext.request.contextPath}/menu6_1"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg01.jpg"></a>
+				<a href="${pageContext.request.contextPath}/menu6_2"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg02.jpg"></a>
+				<a href="${pageContext.request.contextPath}/menu6_3"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg03.jpg"></a>
+				<a href="${pageContext.request.contextPath}/menu6_4"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg04.jpg"></a>
+				<a href="${pageContext.request.contextPath}/menu6_5"><img src="${pageContext.request.contextPath}/resources/images/mainBottomImg05.jpg"></a>
 			</div>
 		</div><!-- contentWrap end -->
 		<div class="bottom">
 			<ul>
 				<li><img src="${pageContext.request.contextPath}/resources/images/mainBottom_txt.png"></li>
 				<li><img src="${pageContext.request.contextPath}/resources/images/mainBottom01.png"></li>
-				<li><img src="${pageContext.request.contextPath}/resources/images/mainBottom01.png"></li>
+				<li><img src="${pageContext.request.contextPath}/resources/images/mainBottom02.png"></li>
 				<li><img src="${pageContext.request.contextPath}/resources/images/mainBottom03.png"></li>
 				<li><img src="${pageContext.request.contextPath}/resources/images/mainBottom04.png"></li>
 			</ul>

@@ -274,4 +274,41 @@ public class HomeController {
 		return "menu05/menu05_3";
 	}
 	
+	@RequestMapping(value = "/menu6_1", method = RequestMethod.GET)
+	public String menu6_1(HttpServletRequest req,Model model) {
+		logger.info("menu06_01");
+		
+		return "menu06/menu06_1";
+	}
+	
+	@RequestMapping(value = "/menu6_2", method = RequestMethod.GET)
+	public String menu6_2(HttpServletRequest req,Model model) {
+		logger.info("menu06_02");
+		
+		return "menu06/menu06_2";
+	}
+	
+	@RequestMapping(value = "/menu6_3", method = RequestMethod.GET)
+	public String menu6_3(HttpServletRequest req,Model model) {
+		logger.info("menu06_03");
+		
+		return "menu06/menu06_3";
+	}
+	
+	@RequestMapping(value = "/menu6_4", method = RequestMethod.GET)
+	public String menu6_4(HttpServletRequest req,Model model) {
+		logger.info("menu06_04");
+		
+		return "menu06/menu06_4";
+	}
+	
+	@RequestMapping(value = "/menu6_5", method = RequestMethod.GET)
+	public String menu6_5(HttpServletRequest req,Model model) {
+		logger.info("menu06_05");
+		
+		return "menu06/menu06_5";
+	}
+	
+	
+	
 }
