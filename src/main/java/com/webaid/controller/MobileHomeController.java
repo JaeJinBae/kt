@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.webaid.domain.NoticeVO;
-import com.webaid.service.AdviceService;
 import com.webaid.service.NoticeService;
-import com.webaid.service.ReplyService;
 
 @Controller
 public class MobileHomeController {
@@ -22,12 +20,6 @@ public class MobileHomeController {
 	
 	@Autowired
 	private NoticeService nService;
-	
-	@Autowired
-	private AdviceService aService;
-	
-	@Autowired
-	private ReplyService rService;
 	
 	@RequestMapping(value = "/mMain", method = RequestMethod.GET)
 	public String mobileMain(Model model) {

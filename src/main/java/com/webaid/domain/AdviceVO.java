@@ -3,43 +3,69 @@ package com.webaid.domain;
 import java.util.Date;
 
 public class AdviceVO {
-	private int bno;
-	private String writer;
-	private String title;
+	private String name;
+	private String call;
+	private String mail;
+	private String addr;
+	private String callTime;
+	private String visitingDate;
+	private String using;
 	private String content;
-	private String pwtype;
-	private String pw;
-	private String state;
-	private int cnt;
-	private Date regdate;
-	private int replycnt;
 
-	public AdviceVO() {
-		super();
+	public String getName() {
+		return name;
 	}
 
-	public int getBno() {
-		return bno;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public void setBno(int bno) {
-		this.bno = bno;
+	public String getCall() {
+		return call;
 	}
 
-	public String getWriter() {
-		return writer;
+	public void setCall(String call) {
+		this.call = call;
 	}
 
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public String getMail() {
+		return mail;
 	}
 
-	public String getTitle() {
-		return title;
+	public void setMail(String mail) {
+		this.mail = mail;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public String getAddr() {
+		return addr;
+	}
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+
+	public String getCallTime() {
+		return callTime;
+	}
+
+	public void setCallTime(String callTime) {
+		this.callTime = callTime;
+	}
+
+	public String getVisitingDate() {
+		return visitingDate;
+	}
+
+	public void setVisitingDate(String visitingDate) {
+		this.visitingDate = visitingDate;
+	}
+
+	public String getUsing() {
+		return using;
+	}
+
+	public void setUsing(String using) {
+		this.using = using;
 	}
 
 	public String getContent() {
@@ -50,58 +76,10 @@ public class AdviceVO {
 		this.content = content;
 	}
 
-	public String getPwtype() {
-		return pwtype;
-	}
-
-	public void setPwtype(String pwtype) {
-		this.pwtype = pwtype;
-	}
-
-	public String getPw() {
-		return pw;
-	}
-
-	public void setPw(String pw) {
-		this.pw = pw;
-	}
-
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public int getCnt() {
-		return cnt;
-	}
-
-	public void setCnt(int cnt) {
-		this.cnt = cnt;
-	}
-
-	public Date getRegdate() {
-		return regdate;
-	}
-
-	public void setRegdate(Date regdate) {
-		this.regdate = regdate;
-	}
-
-	public int getReplycnt() {
-		return replycnt;
-	}
-
-	public void setReplycnt(int replycnt) {
-		this.replycnt = replycnt;
-	}
-
 	@Override
 	public String toString() {
-		return "AdviceVO [bno=" + bno + ", writer=" + writer + ", title=" + title + ", content=" + content + ", pwtype="
-				+ pwtype + ", pw=" + pw + ", cnt=" + cnt + ", regdate=" + regdate + ", replycnt=" + replycnt + "]";
+		return "AdviceVO [name=" + name + ", call=" + call + ", mail=" + mail + ", addr=" + addr + ", callTime="
+				+ callTime + ", visitingDate=" + visitingDate + ", using=" + using + ", content=" + content + "]";
 	}
 
 }
