@@ -122,7 +122,7 @@ public class MobileHomeController {
 	public String mMenu3_2(HttpServletRequest req,Model model) {
 		logger.info("mMenu03_02");
 		
-		return "menu02/mMenu03_2";
+		return "menu03/mMenu03_2";
 	}
 	
 	@RequestMapping(value = "/mMenu4_1", method = RequestMethod.GET)
