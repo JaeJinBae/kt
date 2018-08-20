@@ -330,7 +330,7 @@
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
 				<h1>053 - 636 - 2002</h1>
-				<a href="">가입상담문의<br>바로가기</a>
+				<a href="${pageContext.request.contextPath}/menu5_1">가입상담문의<br>바로가기</a>
 			</div> 
 		</div>
 		<div class="contentWrap">
