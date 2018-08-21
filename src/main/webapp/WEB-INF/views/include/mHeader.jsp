@@ -81,6 +81,7 @@
 		width:20px;
 		float:right;
 		margin-right:10px;
+		margin-top:6px;
 	}
 	.subMenu{
 		display:none;

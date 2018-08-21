@@ -103,6 +103,7 @@
 	.serviceText > li{
 		width:100%;
 		font-size:14px;
+		margin-bottom:5px;
 	}
 	.red{
 		color:red;
@@ -124,90 +125,50 @@
 	.content02{
 		width:100%;
 	}
-	.content02 > h4{
-		font-size:20px;
-		margin:15px 0;
+	.content02 > p{
+		font-size:14px;
 	}
 	.content02 > ul {
 		width:100%;
 		overflow:hidden;
+		margin-top:15px;
 	}
 	.content02 > ul > li{
-		width:50%;
+		width:100%;
 		height:85px;
-		float:left;
 		margin-bottom:10px;
 		text-align: center;
 	}
 	.content02 > ul > li > img{
-		width:46px;
+		width:100%;
 	}
 	.content03{
 		width:100%;
-	}
-	.content03 > h4{
-		font-size:20px;
-		margin:15px 0;
 	}
 	.content03 > ul {
 		width:100%;
 		overflow:hidden;
 	}
 	.content03 > ul > li{
-		width:50%;
-		float:left;
-		margin-bottom:10px;
-		text-align: center;
+		width:100%;
+		margin-bottom:20px;
 	}
 	.content03 > ul > li > img{
-		width:46px;
+		width:100%;
+	}
+	.content03 > ul > li > h4{
+		margin-top:5px;
+		font-size:17px;
+	}
+	.content03 >  ul > li > p{
+		font-size:14px;
+		margin-top:5px;
 	}
 	.content04{
 		width:100%;
 	}
-	.content04 > ul {
+	.content04 > img{
 		width:100%;
-		overflow:hidden;
-	}
-	.content04 > ul > li{
-		width:100%;
-		margin-bottom:30px;
-	}
-	.content04 > ul > li:last-child{
-		margin:0;
-	}
-	.content04 > ul > li > img{
-		width:100%;
-	}
-	.content04 > ul > li > p{
-		font-size:14px;
-		margin-top:8px;
-	}
-	.content05{
-		width:100%;
-	}
-	.content05 > img{
-		width:100%;
-	}
-	.content06{
-		width:100%;
-	}
-	.content06 > h4{
-		font-size:20px;
-		margin:15px 0;
-	}
-	.contentText{
-		width:100%;
-		overflow:hidden;
-	}
-	.contentText > img{
-		width:47px;
-		float:left;
-	}
-	.contentText > p{
-		float:right;
-		font-size:15px;
-		width:265px;
 	}
 	
 	
@@ -285,83 +246,46 @@
 						</li>
 					</ul>
 				</div><!-- content01 -->
+				<div class="subTitle">
+					<h4>서비스 특장점</h4>
+				</div>
 				<div class="content02">
-					<h4><span class="red">선택</span> 제공</h4>
+					<p>사업장 환경에 맞는 맞춤형 컨설팅으로 다양한 케어서비스를 최적의 설계로 제공해 드리는 플랫폼 기반의 출동보안케어서비스입니다.</p>
 					<ul>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02icon01.gif">
-							<h5>비상통보</h5>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02icon02.gif">
-							<h5>안전금고</h5>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02icon03.gif">
-							<h5>정전감시</h5>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02icon04.gif">
-							<h5>출입통제</h5>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02icon05.gif">
-							<h5>화재이상통보</h5>
-						</li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/menu03_02good01.jpg"></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/menu03_02good02.jpg"></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/menu03_02good03.jpg"></li>
+						<li><img src="${pageContext.request.contextPath}/resources/images/menu03_02good04.jpg"></li>
 					</ul>
 				</div><!-- content02 -->
+				<div class="subTitle">
+					<h4>이런 고객님께 추천합니다.</h4>
+				</div>
 				<div class="content03">
-					<h4><span class="red">보험</span> 제공</h4>
 					<ul>
 						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_01icon06.png">
-							<h5>보상형(세이프가드)</h5>
+							<img src="${pageContext.request.contextPath}/resources/images/menu03_02recommend01.jpg">
+							<h4><span class="red">사업장 환경에 꼭 맞는 보안서비스가 <br>필요한 고객님</span></h4>
+							<p>전문보안컨설팅으로 고객사업장 환경에 맞는 서비스를 설계하여 제공합니다!</p>
 						</li>
 						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_01icon07.png">
-							<h5>배상형</h5>
+							<img src="${pageContext.request.contextPath}/resources/images/menu03_02recommend02.jpg">
+							<h4><span class="red">보안서비스의 가격이 부담되는 고객님</span></h4>
+							<p>방범서비스와 고화질 영상보안서비스 및 다양한 케어서비스까지 합리적인 요금으로 이용하세요!</p>
+						</li>
+						<li>
+							<img src="${pageContext.request.contextPath}/resources/images/menu03_02recommend03.jpg">
+							<h4><span class="red">보안서비스 외에 다양한 케어서비스를 <br>받고 싶은 고객님</span></h4>
+							<p>공구대여, 정기순찰 및 전등제어, 화재감시 등 다양한 케어/편의 서비스를 함께 이용하세요!</p>
 						</li>
 					</ul>
 				</div><!-- content03 -->
 				<div class="subTitle">
-					<h4>케이티텔레캅, 이래서 추천합니다!</h4>
+					<h4>서비스 이용안내</h4>
 				</div>
 				<div class="content04">
-					<ul>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02bottom01.jpg">
-							<p>매장에 따라 <span class="red">차별화된 보안설계 제공</span></p>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02bottom02.jpg">
-							<p>언제어디서나 고화질 <span class="red">영상 모니터링</span></p>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02bottom03.jpg">
-							<p>24시간 <span class="red">출동서비스</span></p>
-						</li>
-						<li>
-							<img src="${pageContext.request.contextPath}/resources/images/menu01_02bottom04.jpg">
-							<p>도난화재시에도 안심 할 수 있는 <span class="red">보상서비스</span></p>
-						</li>
-					</ul>
+					<img src="${pageContext.request.contextPath}/resources/images/menu03_02access_guide.png">
 				</div><!-- content04 end -->
-				<div class="subTitle">
-					<h4>구성도</h4>
-				</div>
-				<div class="content05">
-					<img src="${pageContext.request.contextPath}/resources/images/menu01_02map.png">
-				</div> 
-				<div class="content06">
-					<h4>매장 보안<span class="red"> TIP</span></h4>
-					<div class="contentText">
-						<img src="${pageContext.request.contextPath}/resources/images/menu01_01icon08.jpg">
-						<p>
-							화재로 인한 소중한 상품 피해를 방지하기 위해서 <span class="red">화재이상통보서비스를 추천</span> 드립니다.<br>
-							화재 발생 시 감지하여 빠른 출동 및 대처로 피해 확산을 방지합니다. 
-						</p>
-					</div>
-				</div><!-- content06 -->
 			</div><!-- contentWrap end -->
 		</div><!-- wrapper end -->
 		<div class="footer">

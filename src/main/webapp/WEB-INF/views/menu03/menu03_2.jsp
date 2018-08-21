@@ -297,7 +297,7 @@
 					</ul>
 				</div><!-- content02 -->
 				<div class="subTitle">
-					<h3>이런 고객님께 추천합니다</h3>
+					<h3>이런 고객님께 추천합니다.</h3>
 				</div>
 				<div class="content03">
 					<ul>
