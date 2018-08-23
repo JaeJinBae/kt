@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>억산한의원 관리자페이지</title>
+<title>kttelecop 관리자페이지</title>
 <style>
 	*{
 		margin:0;
@@ -90,13 +90,12 @@
 <body>
 	<div id="headerDiv">
 		<div id="logo">
-			<h2>억산한의원 관리자</h2>
+			<h2>KT telecop 관리자</h2>
 		</div>
 		<a class="gohome" href="${pageContext.request.contextPath}/admin/logout">로그아웃</a>
 		<div id="headerMenu"> 
 			<ul>
 				<li><a href="${pageContext.request.contextPath}/admin/" title="게시판 관리" id="boardCtr">게시판 관리</a></li>
-				<li><a href="statistics" title="통계" id="statistics">통 계</a></li>
 			</ul>
 		</div>
 	</div>

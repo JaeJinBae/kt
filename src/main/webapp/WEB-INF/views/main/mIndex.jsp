@@ -324,15 +324,15 @@
 	<section id="main">
 		<div class="mainSlider">
 			<div class="mainSlider1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider11.jpg"></div>
-			<div class="mainSlider2"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>
-			<div class="mainSlider3"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider33.jpg"></a></div>
-			<div class="mainSlider4"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider44.jpg"></a></div>
+			<div class="mainSlider2"><a href="${pageContext.request.contextPath}/mMenu3_1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>
+			<div class="mainSlider3"><a href="${pageContext.request.contextPath}/mMenu3_2"><img src="${pageContext.request.contextPath}/resources/images/mainSlider33.jpg"></a></div>
+			<div class="mainSlider4"><a href="${pageContext.request.contextPath}/mMenu5_1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider44.jpg"></a></div>
 		</div>
 		<div class="call">
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
 				<h1>053 - 636 - 2002</h1>
-				<a href="">가입상담 바로가기</a>
+				<a href="${pageContext.request.contextPath}/mMenu5_1">가입상담 바로가기</a>
 			</div> 
 		</div>
 		<div class="contentWrap">

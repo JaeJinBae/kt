@@ -70,7 +70,7 @@
 	.sideMenu > ul > li > a{
 		font-size:18px;
 	}
-	.sideMenu > ul > li:nth-child(2) > a{
+	.sideMenu > ul > li:last-child > a{
 		color:red;
 		font-weight:500;
 	}
@@ -93,10 +93,8 @@
 	}
 	.text1{
 		font-size:20px;
+		margin-bottom:15px;
 	}
-	.text1:nth-child(3){
-		margin-bottom:15px; 
-	} 
 	.text2{
 		font-size:15px;
 	}
@@ -195,7 +193,7 @@
 	</header>
 	<section> 
 		<div class="wrapper">
-			<h1 class="contentTitle">시공사례</h1>
+			<h1 class="contentTitle">이벤트</h1>
 			<div class="sideMenu"> 
 				<h3>고객센터</h3>
 				<ul>
@@ -206,9 +204,8 @@
 			</div><!-- sideMenu end -->
 			<div class="contentWrap">
 				<div class="contentTop">
-					<h2>시공사례</h2>
-					<p class="text1">고객님의 특성을 고려한 </p>
-					<p class="text1">맞춤 안전서비스를 제공하고 있습니다.</p>
+					<h2>이벤트</h2>
+					<p class="text1">케이티텔레캅이 준비한 아주 특별한 이벤트!</p>
 					<p class="text2">가정/상가/사무실용 안전시스템부터 금융기관/대형빌딩/영상보안 시스템까지.</p>
 					<p class="text2">케이티텔레캅은 고객님의 특성을 고려한 첨단 종합 안심서비스를 제공하고 있습니다.</p>
 				</div>
@@ -220,7 +217,7 @@
 					<table>
 						<tr>
 							<td><h1>${item.title}</h1></td>
-						</tr>
+						</tr> 
 						<tr>
 							<td>
 								<span>작성자 : </span>${item.writer}

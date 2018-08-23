@@ -322,9 +322,9 @@
 	<section>
 		<div class="mainSlider">
 			<div class="mainSlider1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider11.jpg"></div>
-			<div class="mainSlider2"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>
-			<div class="mainSlider3"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider33.jpg"></a></div>
-			<div class="mainSlider4"><a href=""><img src="${pageContext.request.contextPath}/resources/images/mainSlider44.jpg"></a></div>
+			<div class="mainSlider2"><a href="${pageContext.request.contextPath}/menu3_1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>
+			<div class="mainSlider3"><a href="${pageContext.request.contextPath}/menu3_2"><img src="${pageContext.request.contextPath}/resources/images/mainSlider33.jpg"></a></div>
+			<div class="mainSlider4"><a href="${pageContext.request.contextPath}/menu5_1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider44.jpg"></a></div>
 		</div>
 		<div class="call">
 			<div class="callInnerDiv">

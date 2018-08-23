@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>억산한의원 관리자페이지</title>
+<title>KTtelecop 관리자페이지</title>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/reset.css?ver=2">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -257,9 +257,8 @@
 		<div class="leftMenu">
 			<h2>게시판 리스트</h2>
 			<ul> 
-				<li> <a href="${pageContext.request.contextPath}/admin/"> 공지사항</a></li>
-				<li> <a href="${pageContext.request.contextPath}/admin/adminBroadcasting"> 언론보도</a></li>
-				<li> <a href="${pageContext.request.contextPath}/admin/adminAdvice"> 진료/비용 상담</a></li>
+				<li> <a href="${pageContext.request.contextPath}/admin/" style="font-weight:bold;"> 시공사례</a></li>
+				<li> <a href="${pageContext.request.contextPath}/admin/adminEvent"> 이벤트</a></li>
 			</ul>
 		</div>
 		<div class="howToUpload">
@@ -273,7 +272,7 @@
 			</ol>
 		</div>
 		<div class="centerMenu">
-			<h1 class="boardTitle">&lt;공지사항 관리&gt;</h1>
+			<h1 class="boardTitle">&lt;시공사례 관리&gt;</h1>
 			<form id="form1" method="post" action="adminNoticeRegister">
 				<div id="container">
 					<p>작성자: <input type="text" name="writer" value="관리자"></p>

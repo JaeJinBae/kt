@@ -43,7 +43,6 @@ public class AdminController {
 	@Autowired
 	private NoticeService nService;
 
-	
 	@Autowired
 	private EventService eService;
 
@@ -62,7 +61,7 @@ public class AdminController {
 
 		HttpSession session = req.getSession();
 
-		if (id.equals("admin") && pw.equals("euksan5853399")) {
+		if (id.equals("admin") && pw.equals("kt6362002")) {
 			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
 			session.setAttribute("id", id);
 			System.out.println("session 아이디" + session.getAttribute("id"));
