@@ -1,6 +1,7 @@
 package com.webaid.controller;
 
 import java.io.UnsupportedEncodingException;
+import java.util.List;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -15,15 +16,23 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mobile.device.Device;
 import org.springframework.mobile.device.DeviceUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.webaid.domain.AdviceVO;
 import com.webaid.domain.EasySangdamVO;
+import com.webaid.domain.EventVO;
+import com.webaid.domain.NoticeVO;
+import com.webaid.domain.PageMaker;
+import com.webaid.domain.SearchCriteria;
+import com.webaid.service.EventService;
+import com.webaid.service.NoticeService;
 
 /**
  * Handles requests for the application home page.
@@ -33,6 +42,12 @@ public class HomeController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
+	@Autowired
+	private NoticeService nService;
+	
+	@Autowired
+	private EventService eService;
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpServletRequest req,Model model) {
 		logger.info("deviceCheck.");
@@ -262,17 +277,79 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/menu5_2", method = RequestMethod.GET)
-	public String menu5_2(HttpServletRequest req,Model model) {
+	public String menu5_2(HttpServletRequest req, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		logger.info("menu05_02");
+		
+		List<NoticeVO> list = nService.listSearch(cri);
+		
+		cri.setKeyword(null);
+		cri.setSearchType("n");
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(nService.listSearchCount(cri));
+
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
 		
 		return "menu05/menu05_2";
 	}
 	
+	@RequestMapping(value = "/menu5_2Read", method = RequestMethod.GET)
+	public String menu5_2Read(int bno, HttpServletRequest req, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu05_02Read");
+		
+		NoticeVO vo=nService.selectOne(bno);
+		nService.updateCnt(bno);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(nService.listSearchCount(cri));
+		
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "menu05/menu05_2Read";
+	}
+	
 	@RequestMapping(value = "/menu5_3", method = RequestMethod.GET)
-	public String menu5_3(HttpServletRequest req,Model model) {
+	public String menu5_3(HttpServletRequest req, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
 		logger.info("menu05_03");
 		
+		List<EventVO> list = eService.listSearch(cri);
+		
+		cri.setKeyword(null);
+		cri.setSearchType("n");
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(eService.listSearchCount(cri));
+
+		model.addAttribute("list", list);
+		model.addAttribute("pageMaker", pageMaker);
+		
 		return "menu05/menu05_3";
+	}
+	
+	@RequestMapping(value = "/menu5_3Read", method = RequestMethod.GET)
+	public String menu5_3Read(int bno, HttpServletRequest req, @ModelAttribute("cri") SearchCriteria cri, Model model) throws Exception {
+		logger.info("menu05_03Read");
+		
+		EventVO vo=eService.selectOne(bno);
+		eService.updateCnt(bno);
+		
+		PageMaker pageMaker = new PageMaker();
+		pageMaker.setCri(cri);
+		pageMaker.makeSearch(cri.getPage());
+		pageMaker.setTotalCount(eService.listSearchCount(cri));
+		
+		model.addAttribute("item", vo);
+		model.addAttribute("pageMaker", pageMaker);
+		
+		return "menu05/menu05_3Read";
 	}
 	
 	@RequestMapping(value = "/menu6_1", method = RequestMethod.GET)

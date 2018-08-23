@@ -59,6 +59,7 @@
 	}
 	.text1{
 		font-size:17px;
+		font-weight:500;
 	}
 	.text1:nth-child(1){
 		margin-bottom:15px;

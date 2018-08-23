@@ -241,6 +241,7 @@
 		width:232px;
 		margin:0 auto;
 		margin-top:25px;
+		display:none;
 	}
 	.slick-prev:before, .slick-next:before {
 		color:black;

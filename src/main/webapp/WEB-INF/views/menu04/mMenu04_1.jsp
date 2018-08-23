@@ -59,6 +59,7 @@
 	}
 	.text1{
 		font-size:17px;
+		font-weight:500;
 	}
 	.text1:nth-child(1){
 		margin-bottom:15px;
@@ -74,7 +75,7 @@
 	}
 	.subTitle > h4{
 		font-weight:600;
-		font-size:20px;
+		font-size:23px;
 	}
 	.content01{
 		width:100%;
@@ -87,7 +88,7 @@
 		margin-bottom:25px;
 	}
 	.service_text > h4{
-		font-size:21px;
+		font-size:20px;
 	}
 	.service_text > p{
 		font-size:15px;
@@ -102,7 +103,7 @@
 	}
 	.service_text_ul > li > p:first-child{
 		width:100px;
-		font-size:15px;
+		font-size:16px;
 		font-weight:500;
 	}
 	.service_text_ul > li > p:last-child{
@@ -131,10 +132,25 @@
 	.content02{
 		width:100%;
 	}
-	.content02 > img{
+	.content02 > ul{
 		width:100%;
 	}	
-	
+	.content02 > ul > li{
+		width:100%;
+		margin-bottom:15px;
+	}
+	.content02 > ul > li > img{
+		width:100%;
+	}
+	.content02 > ul > li > p{
+		font-size:15px;
+	}
+	.content03{
+		width:100%;
+	}
+	.content03 > img{
+		width:100%;
+	}
 </style>
 </head> 
 <body>
@@ -148,9 +164,7 @@
 				<div class="contentTop">
 					<img src="${pageContext.request.contextPath}/resources/images/mobile04_01_topBg.jpg">
 					<h4>출입통제 서비스 (Access Control)</h4>
-					<p class="text1">카드부터 지문, 얼굴 등 생체인식까지 고객님의 사업장에 </p>
-					<p class="text1">적합한 다양한 리더기 및 출입통제시스템을 통해</p>
-					<p class="text1">통해 출입보안 및 근태/식수관리 가능!</p>
+					<p class="text1">카드부터 지문, 얼굴 등 생체인식까지 고객님의 사업장에 적합한 다양한 리더기 및 출입통제시스템을 통해 출입보안 및 근태/식수관리 가능!</p>
 					<p class="text2">출입문 등의 시설물에 물리적인 개폐장치를 설치하고 보안장비를 연결하여 등록된 사람만이 카드, 지문, 얼굴, 홍채 인식 등으로 출입이 가능하도록 통제, 관리하는 서비스입니다.</p>
 				</div>
 				<div class="subTitle">
