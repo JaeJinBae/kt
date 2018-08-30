@@ -83,6 +83,7 @@
 	.content01 > ul{
 		width:100%;
 		background: #efefef;
+		padding:5px 0;
 	}
 	.content01 > ul > li{
 		width:98%;
@@ -110,6 +111,11 @@
 	}
 	.red{
 		color:red;
+	}
+	.dot{
+		color:red;
+		font-size:20px;
+		display:inline-block;
 	}
 	.content02{
 		width:100%;

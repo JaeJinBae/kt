@@ -50,26 +50,26 @@
 	}
 	.call{
 		width:100%;
-		height:80px;
+		height:60px;
 		background: red;
 	}
 	.callInnerDiv{
 		width:100%;
-		height:80px;
+		height:100%;
 		margin:0 auto;
 		/* background: url("${pageContext.request.contextPath}/resources/images/mainTopbg_rg.jpg") no-repeat 50% 50%; */
 		position: relative;
 	}
 	.callInnerDiv > img{
 		position: absolute;
-		top:11px;
+		top:0px;
 		left:10px;
 		width:150px;
 	}
 	.callInnerDiv > h1{
 		color:#fff;
 		position: absolute;
-		top:38px;
+		top:24px;
 		right:26px;
 		font-size:22px;
 	}
@@ -77,7 +77,7 @@
 		color:#fff;
 		position: absolute;
 		right:20px;
-		top:15px;
+		top:5px;
 		font-size:22px;
 		text-align: center;
 		line-height:25px;

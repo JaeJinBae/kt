@@ -270,13 +270,16 @@
 	.bottom > ul{
 		width:1100px;
 		margin:0 auto;
+		padding-top:30px;
 		text-align: center;
+		overflow:hidden;
 	}
 	.bottom > ul > li{
-		display:inline-block;
+		/* display:inline-block; */
+		float:left;
 		width:19.8%;
 		text-align: center;
-		margin-top:30px;
+		/* margin-top:30px; */
 	}
 	.bottom > ul > li:first-child > img{
 		margin-top:10px;

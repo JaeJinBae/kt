@@ -220,7 +220,7 @@
 				<div class="contentTop">
 					<img src="${pageContext.request.contextPath}/resources/images/mobile05_02_topBg.png">
 					<h4>시공사례</h4>
-					<p class="text1">고객님의 특성을 고려한 </p>
+					<p class="text1">고객님의 요청에 부합하는</p>
 					<p class="text1">맞춤 안전서비스를 제공하고 있습니다.</p>
 					<p class="text2">가정/상가/사무실용 안전시스템부터 금융기관/대형빌딩/영상보안 시스템까지. 케이티텔레캅은 고객님의 특성을 고려한 첨단 종합 안심서비스를 제공하고 있습니다.</p>
 				</div>
