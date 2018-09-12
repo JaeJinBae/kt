@@ -245,7 +245,7 @@
 					</div>
 				</div><!-- content01 -->
 				<div class="content02">
-					<form id="f1" method="post" action="menu05_01sendMail">
+					<form id="f1" method="post" action="mMenu05_01sendMail">
 						<table>
 							<tr>
 								<td class="title"><span class="red">*</span>성명</td>

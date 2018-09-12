@@ -184,6 +184,7 @@
 	}
 	.formWrap{
 		width:100%;
+		position: relative;
 	}
 	.formWrap > form{
 		width:100%;
@@ -223,6 +224,49 @@
 		border:1px solid lightgray;
 		margin-top:4px;
 		margin-bottom:3px;
+	}
+	#chkbox{
+		width:13px;
+		height:13px;
+	}
+	.agreeDetail{
+		cursor:pointer;
+	}
+	.agreeDetail:hover{
+		font-weight:bold;
+	}
+	.agreeInfo{
+		display:none;
+		position: absolute;
+		top:0;
+		background: #f1f1f1;
+		padding:10px 3px;
+		border:1px solid gray;
+	}
+	.agreeInfo > h4{
+		margin-bottom:20px;
+		margin-top:13px;
+	}
+	.agreeInfo > table tr{
+		display:block;
+		margin-bottom:10px;
+	}
+	.agreeInfo > table th{
+		font-size:14px;
+		width:130px;
+		text-align: left;
+		vertical-align: top;
+	}
+	.agreeInfo > table td{
+		text-align: left;
+		font-size:14px;
+	}
+	.agreeInfo > h5{
+		width:50px;
+		margin:15px auto;
+		background: #e1e1e1;
+		border-radius: 4px;
+		cursor: pointer;
 	}
 	.submitBtn{
 		background: red;
@@ -314,6 +358,33 @@
 			$(".security").css("display","none");
 			$(".security").eq(index).css("display","block");
 		});
+		
+		//개인정보취급
+		$(".agreeDetail").click(function(){
+			$(".agreeInfo").css("display","block");
+		});
+		$(".agreeInfo > h5").click(function(){
+			$(".agreeInfo").css("display","none");
+		});
+		
+		$("#f1").submit(function(e){
+			var check=$("input[name='agreeBtn']:checked").val();
+			var name=$("input[name='writer']").val();
+			var callNum=$("input[name='call']").val();
+			
+			if(name=="" || name==null){
+				alert("작성자를 입력해주세요.");
+				return false;
+			}
+			if(callNum==""||callNum==null){
+				alert("전화번호를 입력해 주세요.");
+				return false;
+			}
+			if(check!="agree"){
+				alert("개인정보 수집에 동의해주세요");
+				return false;
+			}
+		});
 	});
 </script>
 </head>
@@ -385,7 +456,7 @@
 			<div class="rightContent">
 				<h2>24시간 상담신청</h2>
 				<div class="formWrap">
-					<form method="post" action="sendMail">
+					<form id="f1" method="post" action="sendMail">
 						<table>
 							<tr>
 								<th>작성자</th>
@@ -408,11 +479,42 @@
 								<td><textarea name="content"></textarea></td>
 							</tr>
 							<tr>
+								<th>추천인</th>
+								<td><input type="text" name="recommender" placeholder="추천인의 이름을 적어주세요."></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input id="chkbox" type="checkbox" name="agreeBtn" value="agree"> 동의합니다. / <span class="agreeDetail">개인정보취급방침</span>
+								</td>
+							</tr>
+							<tr>
 								<th colspan="2"><input class="submitBtn" type="submit" value="상담신청"></th>
 							</tr>
 						</table>
 					</form>
-				</div>
+					<div class="agreeInfo">
+						<h4>개인정보 수집/이용동의</h4>
+						<table>
+							<tr>
+								<th>- 개인정보 수집항목 :</th>
+								<td>성명, 연락처</td>
+							</tr>
+							<tr>
+								<th>- 수집 및 이용목적 :</th>
+								<td>케이티텔레캅 보안서비스 문의 사항 접수 및 답변 제공을 위한 최소한의 개인정보를 수집하고 있습니다.</td>
+							</tr>
+							<tr>
+								<th>- 보유 및 이용기간 :</th>
+								<td>이용목적 달성 및 일정기간 경과 후 파기</td>
+							</tr>
+							<tr>
+								<th>- 동의 거부 시 불이익 :</th>
+								<td>케이티텔레캅 보안서비스 안내/상담 서비스 제공 불가</td>
+							</tr>
+						</table>
+						<h5>닫기</h5>
+					</div><!-- agreeInfo end -->
+				</div><!-- formWrap end -->
 			</div><!-- rightContent end -->
 			<div class="bottomContent">
 				<div><a href="${pageContext.request.contextPath}/mMenu6_1"><img style="border:1px solid #f1f1f1; width:231px;" src="${pageContext.request.contextPath}/resources/images/mainBottomImg01.jpg"></a></div>
