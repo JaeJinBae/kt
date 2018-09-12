@@ -79,7 +79,7 @@
 </style>
 <script>
 	$(function(){
-		$(".mainNavWrap > ul").hover(function(){
+		/* $(".mainNavWrap > ul").hover(function(){
 			$(".dropdownNav").slideDown('fast');
 			$(".wrapDiv").css("border-bottom","1px solid gray");
 			$(".headerWrap").css("height","365px");
@@ -88,7 +88,16 @@
 				$(".headerWrap").css("height","82px");	
 			});
 			$(".wrapDiv").css("border","0");
-			
+		}); */
+		
+		$(".mainNavWrap > ul").hover(function(){
+			$(".dropdownNav").css("display","block");
+			$(".wrapDiv").css("border-bottom","1px solid gray");
+			$(".headerWrap").css("height","365px");
+		},function(){
+			$(".dropdownNav").css("display","none");
+			$(".headerWrap").css("height","82px");	
+			$(".wrapDiv").css("border","0");
 		});
 	});
 </script>
