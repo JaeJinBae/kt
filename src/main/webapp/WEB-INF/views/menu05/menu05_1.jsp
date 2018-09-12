@@ -302,6 +302,10 @@
 								</td>
 							</tr>
 							<tr>
+								<td class="title">추천인</td>
+								<td><input type="text" name="recommender"></td>
+							</tr>
+							<tr>
 								<td class="title">문의사항</td>
 								<td><textarea name="content"></textarea></td>
 							</tr>

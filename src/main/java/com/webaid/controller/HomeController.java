@@ -114,7 +114,7 @@ public class HomeController {
 				e.printStackTrace();
 			}
 			String PwMeg = "작성자:" + vo.getWriter() + "<br>" + "전화번호:" + vo.getCall() + "<br>" + "제목:" + vo.getTitle()
-					+ "<br>" + "문의내용:" + vo.getContent() + "<br>";
+					+ "<br>" + "추천인:" + vo.getRecommender() + "<br>" + "문의내용:" + vo.getContent();
 
 			// Text/Project_JSP/img/login/login.gif
 			message.setText(PwMeg, "UTF-8");
@@ -431,7 +431,7 @@ public class HomeController {
 			}
 			String PwMeg = "성명:" + vo.getName() + "<br>" + "연락처:" + vo.getCall() + "<br>" + "이메일:" + vo.getMail()
 					+ "<br>" + "주소:" + vo.getAddr() + "<br>" + "연락가능 시간:" + vo.getCallTime() + "<br>" + "방문요청일시:" + vo.getVisitingDate()
-					 + "<br>" + "타사사용여부:" + vo.getUsing()	 + "<br>" + "문의사항:" + vo.getContent();
+					 + "<br>" + "타사사용여부:" + vo.getUsing()	 +"<br>" + "추천인:" + vo.getRecommender() + "<br>" + "문의사항:" + vo.getContent();
 
 			// Text/Project_JSP/img/login/login.gif
 			message.setText(PwMeg, "UTF-8");

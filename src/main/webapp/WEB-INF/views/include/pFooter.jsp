@@ -46,7 +46,7 @@
 	</div>
 	<div class="txtDiv">
 		<p>소재지 : 대구광역시 달서구 진천로 120 동원메디컬</p>
-		<p>대표 : 김수동 &nbsp;&nbsp;&nbsp; 대표번호 : 053-636-2002</p>
+		<p>대표 : 사공옥남 &nbsp;&nbsp;&nbsp; 대표번호 : 053-636-2002</p>
 		<p><a href="${pageContext.request.contextPath}/admin/login">[ 관리자 모드 ]</a></p>
 	</div>
 	

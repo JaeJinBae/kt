@@ -139,8 +139,9 @@
 	}
 	.security{
 		width:99.9%;
-		height:329px;
+		height:368px;
 		background: url("${pageContext.request.contextPath}/resources/images/mainTab_img01.jpg") no-repeat;
+		background-size:cover !important;
 		overflow:hidden;
 	}
 	.security{
@@ -404,6 +405,10 @@
 							<tr>
 								<th>문의내용</th>
 								<td><textarea name="content"></textarea></td>
+							</tr>
+							<tr>
+								<th>추천인</th>
+								<td><input type="text" name="recommender" placeholder="추천인의 이름을 적어주세요."></td>
 							</tr>
 							<tr>
 								<th colspan="2"><input class="submitBtn" type="submit" value="상담신청"></th>

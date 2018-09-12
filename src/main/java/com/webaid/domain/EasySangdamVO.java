@@ -6,9 +6,18 @@ public class EasySangdamVO {
 	private String time;
 	private String title;
 	private String content;
+	private String recommender;
 
 	public String getWriter() {
 		return writer;
+	}
+
+	public String getRecommender() {
+		return recommender;
+	}
+
+	public void setRecommender(String recommender) {
+		this.recommender = recommender;
 	}
 
 	public void setWriter(String writer) {
@@ -50,9 +59,7 @@ public class EasySangdamVO {
 	@Override
 	public String toString() {
 		return "EasySangdamVO [writer=" + writer + ", call=" + call + ", time=" + time + ", title=" + title
-				+ ", content=" + content + "]";
+				+ ", content=" + content + ", recommender=" + recommender + "]";
 	}
-
-	
 
 }

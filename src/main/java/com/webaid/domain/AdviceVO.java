@@ -10,6 +10,16 @@ public class AdviceVO {
 	private String callTime;
 	private String visitingDate;
 	private String using;
+	private String recommender;
+
+	public String getRecommender() {
+		return recommender;
+	}
+
+	public void setRecommender(String recommender) {
+		this.recommender = recommender;
+	}
+
 	private String content;
 
 	public String getName() {
@@ -79,7 +89,8 @@ public class AdviceVO {
 	@Override
 	public String toString() {
 		return "AdviceVO [name=" + name + ", call=" + call + ", mail=" + mail + ", addr=" + addr + ", callTime="
-				+ callTime + ", visitingDate=" + visitingDate + ", using=" + using + ", content=" + content + "]";
+				+ callTime + ", visitingDate=" + visitingDate + ", using=" + using + ", recommender=" + recommender
+				+ ", content=" + content + "]";
 	}
 
 }
