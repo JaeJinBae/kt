@@ -534,7 +534,7 @@
 			</ul>
 		</div>
 		<footer>
-			<%-- <jsp:include page="../include/pFooter.jsp"></jsp:include> --%>
+			<jsp:include page="../include/mFooter.jsp"></jsp:include>
 		</footer>
 	</section>
 	

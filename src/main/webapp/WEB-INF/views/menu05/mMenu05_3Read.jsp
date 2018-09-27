@@ -28,7 +28,7 @@
 		position: absolute;
 		top:35px;
 		z-index: 2;
-		padding:0 15px;
+		
 	}
 	.footer{
 		width:100%;
@@ -37,6 +37,7 @@
 	.wrapper{
 		width:100%;
 		margin:50px auto;
+		padding:0 15px;
 		overflow:hidden;
 	}
 	.contentTitle{
@@ -180,11 +181,9 @@
 			</div><!-- contentWrap end -->
 		</div><!-- wrapper end -->
 		<div class="footer">
-			<%-- <jsp:include page="../include/pFooter.jsp"></jsp:include> --%>
+			<jsp:include page="../include/mFooter.jsp"></jsp:include>
 		</div>
 	</section>
-	<%-- <footer>
-		<jsp:include page="../include/pFooter.jsp"></jsp:include>
-	</footer>  --%>
+	
 </body>
 </html>

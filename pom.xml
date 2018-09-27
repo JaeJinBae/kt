@@ -110,7 +110,11 @@
 		</dependency>
 	
 		<!-- kt telecop -->
-		
+		<dependency>
+		    <groupId>org.mariadb.jdbc</groupId>
+		    <artifactId>mariadb-java-client</artifactId>
+		    <version>1.6.3</version>
+		</dependency>
 		
 		<dependency>
 			<groupId>javax.mail</groupId>

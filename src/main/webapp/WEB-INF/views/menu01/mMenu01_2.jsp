@@ -25,7 +25,7 @@
 		position: absolute;
 		top:35px;
 		z-index: 2;
-		padding:0 15px;
+		
 	}
 	.footer{
 		width:100%;
@@ -35,6 +35,7 @@
 		width:100%;
 		margin:50px auto;
 		overflow:hidden;
+		padding:0 15px;
 	}
 	.contentTitle{
 		text-align: center;
@@ -315,11 +316,8 @@
 			</div><!-- contentWrap end -->
 		</div><!-- wrapper end -->
 		<div class="footer">
-			<%-- <jsp:include page="../include/pFooter.jsp"></jsp:include> --%>
+			<jsp:include page="../include/mFooter.jsp"></jsp:include>
 		</div>
 	</section>
-	<%-- <footer>
-		<jsp:include page="../include/pFooter.jsp"></jsp:include>
-	</footer>  --%>
 </body>
 </html>

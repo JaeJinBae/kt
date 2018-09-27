@@ -82,7 +82,7 @@ public class HomeController {
 	private void SendEmail(EasySangdamVO vo) {
 		logger.info("sendmail 진입");
 		String host = "smtp.naver.com";
-		String user = "bjj7425";
+		String user = "bjj7425";//kttele-cop@naver.com
 		String password = "qowowls12!";
 		int port=465;
 		

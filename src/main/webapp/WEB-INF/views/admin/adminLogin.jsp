@@ -62,31 +62,7 @@
 	}
 </style>
 <script type="text/javascript">
-	$(function(){
-		
-		function idpwCheck(){
-			var id=$("input[name='id']").val();
-			var pw=$("input[name='pw']").val();
-			if(id==""||pw==""){
-				alert("아이디와 비밀번호를 모두 입력하세요.");
-				return;
-			}
-			$.ajax({
-				url:"${pageContext.request.contextPath}/admin/loginCheck/"+id+"/"+pw,
-				type:"post",
-				dataType:"text",
-				success:function(json){
-					console.log(json);
-					
-					if(json!="ok"){
-						alert("아이디 또는 비밀번호를 다시 확인하세요.");
-					}else{
-						location.href="${pageContext.request.contextPath}/admin/";
-					}
-				}
-			});
-		}
-		
+	$(function(){		
 		$(".loginBtn>button").click(function(){
 			var id=$("input[name='id']").val();
 			var pw=$("input[name='pw']").val();
@@ -96,7 +72,43 @@
 				idpwCheck();
 			}
 		});
+		
 	});
+	
+	function idpwCheck(){
+		var id=$("input[name='id']").val();
+		var pw=$("input[name='pw']").val();
+		if(id==""||pw==""){
+			alert("아이디와 비밀번호를 모두 입력하세요.");
+			return;
+		}
+		$.ajax({
+			url:"${pageContext.request.contextPath}/admin/loginCheck/"+id+"/"+pw,
+			type:"post",
+			dataType:"text",
+			success:function(json){
+				console.log(json);
+				
+				if(json!="ok"){
+					alert("아이디 또는 비밀번호를 다시 확인하세요.");
+				}else{
+					location.href="${pageContext.request.contextPath}/admin/";
+				}
+			}
+		});
+	}
+	
+	function enterKey(){
+		if(event.keyCode==13){
+			var id=$("input[name='id']").val();
+			var pw=$("input[name='pw']").val();
+			if(id==null||id==""||pw==null||pw==""){
+				alert("아이디와 비밀번호를 다시 확인하세요.");
+			}else{
+				idpwCheck();
+			}
+		}
+	}
 </script>
 </head>
 <body>
@@ -106,12 +118,12 @@
 			<table>
 				<tr>
 					<td>아이디</td>
-					<td><input type="text" name="id"></td>
+					<td><input type="text" name="id" onKeyDown="enterKey();"></td>
 					<td class="loginBtn" rowspan="2"><button>로그인</button></td>
 				</tr>
 				<tr>
 					<td>비밀번호</td>
-					<td><input type="password" name="pw"></td>
+					<td><input type="password" name="pw" onKeyDown="enterKey();"></td>
 				</tr>
 			</table>
 		</div>
