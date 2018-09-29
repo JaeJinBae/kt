@@ -4,7 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KT telecop</title>
+<title>KT텔레캅 공식협력업체</title>
+<meta name="description" content="무인경비, 대구보안, 대구지킴이, kt인터넷결합, CCTV, 텔레캅듀오, 텔레캅큐브, 홈가드, 출입통제, 대구텐인텐kttelecop">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KT텔레캅 공식협력업체">
+<meta property="og:description" content="무인경비, 대구보안, 대구지킴이, kt인터넷결합, CCTV, 텔레캅듀오, 텔레캅큐브, 홈가드, 출입통제, 대구텐인텐kttelecop">
+<meta property="og:image" content="http://www.kt-telecop.com/logo.png">
+<meta property="og:url" content="http://www.kt-telecop.com">
+<link rel="canonical" href="http://www.kt-telecop.com/">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=2">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=1"/>
