@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=1"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
+<meta name="viewport" content="">
 <style type="text/css">
 	body{
 		position: relative;
@@ -340,6 +341,9 @@
 </style>
 <script>
 	$(function(){
+		/* $("meta[name='viewport']").attr("content","width=1100, initial-scale=1.0");
+		var tt=$("meta[name='viewport']").attr("content");
+		alert(tt); */
 		$(".mainSlider").slick({
 			arrows:false,
 			infinite:true,
