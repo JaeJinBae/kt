@@ -42,12 +42,27 @@ public class MobileHomeController {
 	@Autowired
 	private EventService eService;
 	
+	@RequestMapping(value = "/mPersonalInfo0", method = RequestMethod.GET)
+	public String personalInfo0(HttpServletRequest req,Model model) {
+		logger.info("mPersonalInfo0");
+		
+		return "personalinfo/mPersonal_info0";
+	}
+	
+	@RequestMapping(value = "/mPersonalInfo", method = RequestMethod.GET)
+	public String mPpersonalInfo(HttpServletRequest req,Model model) {
+		logger.info("mPpersonalInfo");
+		
+		return "personalinfo/mPersonal_info";
+	}
+	
 	@RequestMapping(value = "/mMain", method = RequestMethod.GET)
 	public String mobileMain(Model model) {
 		logger.info("mobile Home.");
 		
 		return "main/mIndex";
 	}
+	
 	
 	@RequestMapping(value = "/mMenu1_1", method = RequestMethod.GET)
 	public String mMenu1_1(HttpServletRequest req,Model model) {

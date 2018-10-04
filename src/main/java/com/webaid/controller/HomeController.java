@@ -129,6 +129,22 @@ public class HomeController {
 		}
 	}
 	
+	//personalInfo
+	
+	@RequestMapping(value = "/personalInfo0", method = RequestMethod.GET)
+	public String personalInfo0(HttpServletRequest req,Model model) {
+		logger.info("personalInfo0");
+		
+		return "personalinfo/personal_info0";
+	}
+	
+	@RequestMapping(value = "/personalInfo", method = RequestMethod.GET)
+	public String personalInfo(HttpServletRequest req,Model model) {
+		logger.info("personalInfo");
+		
+		return "personalinfo/personal_info";
+	}
+	
 	@RequestMapping(value = "/menu1_1", method = RequestMethod.GET)
 	public String menu1_1(HttpServletRequest req,Model model) {
 		logger.info("menu01_01");
