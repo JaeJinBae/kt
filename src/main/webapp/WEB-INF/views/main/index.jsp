@@ -381,13 +381,22 @@
 			$(".agreeInfo").css("display","none");
 		});
 		
+		 
+		var nameReg=/^[ㄱ-ㅎ가-힣\s]*$/; //한글
+		
 		$("#f1").submit(function(e){
+			
 			var check=$("input[name='agreeBtn']:checked").val();
 			var name=$("input[name='writer']").val();
 			var callNum=$("input[name='call']").val();
+			var regTxt=nameReg.test(name);
 			
 			if(name=="" || name==null){
 				alert("작성자를 입력해주세요.");
+				return false;
+			}
+			if(regTxt==false){
+				alert("이름은 한글만 입력할 수 있습니다.");
 				return false;
 			}
 			if(callNum==""||callNum==null){
@@ -399,6 +408,13 @@
 				return false;
 			}
 		});
+		
+ 		/* $.getJSON("http://ipinfo.io",function(data){
+			console.log(data);
+			if(data.country=="KR"){
+				$("a").attr("href","#none");
+			}
+		}); */
 	});
 </script>
 </head>
