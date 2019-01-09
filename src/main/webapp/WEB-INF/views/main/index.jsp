@@ -96,8 +96,9 @@
 		color:#fff;
 		position: absolute;
 		top:15px;
-		left:400px;
+		left:460px;
 		font-size:45px;
+		letter-spacing: 5px;
 	}
 	.callInnerDiv > a{
 		color:#fff;
@@ -432,7 +433,7 @@
 		<div class="call">
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
-				<h1>053 - 636 - 2002</h1>
+				<h1>1588-6851</h1>
 				<a href="${pageContext.request.contextPath}/menu5_1">가입상담문의<br>바로가기</a>
 			</div> 
 		</div>

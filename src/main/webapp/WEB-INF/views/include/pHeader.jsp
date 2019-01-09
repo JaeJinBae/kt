@@ -14,6 +14,9 @@
 		line-height: 45px;
 		padding-right:20px;
 	}
+	.telInfo > p > a{
+		color: #fff;
+	}
 	.headerWrap{
 		width:100%;
 		min-width:1100px;
@@ -102,7 +105,7 @@
 	});
 </script>
 <div class="telInfo">
-	<p>맞춤 보안 상담 &nbsp;&nbsp;053 - 636 - 2002</p>
+	<p>맞춤 보안 상담 &nbsp;&nbsp;<a  href="tel:1588-6851">1588-6851</a></p>
 	<%-- <img src="${pageContext.request.contextPath}/resources/images/test.png"> --%>
 </div>
 <div class="headerWrap">
