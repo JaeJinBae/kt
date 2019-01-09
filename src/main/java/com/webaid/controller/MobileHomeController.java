@@ -333,8 +333,8 @@ public class MobileHomeController {
 	private void SendEmail2(AdviceVO vo) {
 		logger.info("sendmail 진입");
 		String host = "smtp.naver.com";
-		String user = "kttele-cop";
-		String password = "kmp501!!";
+		String user = "soosecurity";
+		String password = "soo@6851";
 		int port=465;
 		
 		Properties props = new Properties();
@@ -354,7 +354,7 @@ public class MobileHomeController {
 		try {
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(user));
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress("kttele-cop@naver.com"));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress("soosecurity@naver.com"));
 
 			// Subject
 			String subject = "케이티텔레캅 고객 간편상담신청입니다.";
