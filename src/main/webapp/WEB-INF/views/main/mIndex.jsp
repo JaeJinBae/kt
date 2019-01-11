@@ -80,17 +80,17 @@
 	.callInnerDiv > a{
 		color:#fff;
 		position: absolute;
-		right:20px;
+		right:40px;
 		top:5px;
 		font-size:22px;
 		text-align: center;
 		line-height:25px;
 		font-weight:600;
 	}
-	.callInnerDiv > a:hover{
+	/* .callInnerDiv > a:hover{
 		color:red;
 		font-weight:bold;
-	}
+	} */
 	.contentWrap{
 		width:100%;
 		margin:0 auto;
@@ -407,7 +407,7 @@
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
 				<h1><a href="tel:1588-6851">1588-6851</a></h1>
-				<a href="${pageContext.request.contextPath}/mMenu5_1">가입상담 바로가기</a>
+				<a href="tel:1588-6851">바로전화상담</a>
 			</div> 
 		</div>
 		<div class="contentWrap">
