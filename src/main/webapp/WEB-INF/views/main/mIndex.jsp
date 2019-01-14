@@ -80,12 +80,15 @@
 	.callInnerDiv > a{
 		color:#fff;
 		position: absolute;
-		right:40px;
+		right:21px;
 		top:5px;
 		font-size:22px;
 		text-align: center;
 		line-height:25px;
 		font-weight:600;
+	}
+	.callInnerDiv > a > img{
+		width:22px;
 	}
 	/* .callInnerDiv > a:hover{
 		color:red;
@@ -407,7 +410,7 @@
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
 				<h1><a href="tel:1588-6851">1588-6851</a></h1>
-				<a href="tel:1588-6851">바로전화상담</a>
+				<a href="tel:1588-6851">바로전화상담 <img src="${pageContext.request.contextPath}/resources/images/clickImg3.png"></a>  
 			</div> 
 		</div>
 		<div class="contentWrap">
