@@ -27,6 +27,21 @@
 
   gtag('config', 'AW-1032140496');
 </script>
+<!-- Event snippet for ktt모바일웹전화번호클릭 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+	var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	gtag('event', 'conversion', {
+	    'send_to': 'AW-1032140496/VjYyCKC4m5MBENDtlOwD',
+	    'event_callback': callback
+	});
+  return false;
+}
+</script>
 <style type="text/css">
 	body{
 		position: relative;

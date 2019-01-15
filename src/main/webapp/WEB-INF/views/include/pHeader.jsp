@@ -105,7 +105,7 @@
 	});
 </script>
 <div class="telInfo">
-	<p>맞춤 보안 상담 &nbsp;&nbsp;<a  href="tel:1588-6851">1588-6851</a></p>
+	<p>맞춤 보안 상담 &nbsp;&nbsp;<a onclick="return gtag_report_conversion('tel:1588-6851');" href="tel:1588-6851">1588-6851</a></p>
 	<%-- <img src="${pageContext.request.contextPath}/resources/images/test.png"> --%>
 </div>
 <div class="headerWrap">
