@@ -4,13 +4,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>KT telecop</title>
+<title>KTtelecop</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=1">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=1"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Global site tag (gtag.js) - Google Ads: 1032140496 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1032140496"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-1032140496');
+</script>
+<!-- Event snippet for ktt모바일웹전화번호클릭 conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+	var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	gtag('event', 'conversion', {
+	    'send_to': 'AW-1032140496/VjYyCKC4m5MBENDtlOwD',
+	    'event_callback': callback
+	});
+  return false;
+}
+</script>
 <style type="text/css">
 	body{
 		position: relative;
@@ -409,8 +433,8 @@
 		<div class="call">
 			<div class="callInnerDiv">
 				<img src="${pageContext.request.contextPath}/resources/images/test.png">
-				<h1><a href="tel:1588-6851">1588-6851</a></h1>
-				<a href="tel:1588-6851">바로전화상담 <img src="${pageContext.request.contextPath}/resources/images/clickImg3.png"></a>  
+				<h1><a onclick="return gtag_report_conversion('tel:1588-6851');" href="tel:1588-6851">1588-6851</a></h1>
+				<a onclick="return gtag_report_conversion('tel:1588-6851');" href="tel:1588-6851">바로전화상담 <img src="${pageContext.request.contextPath}/resources/images/clickImg3.png"></a>  
 			</div> 
 		</div>
 		<div class="contentWrap">
