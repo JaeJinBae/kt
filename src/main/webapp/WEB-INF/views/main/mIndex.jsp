@@ -71,14 +71,14 @@
 		border-top: 1px solid lightgray;
 		background: #aaa;
 		text-align: right;
-		padding: 5px 10px;
+		padding: 10px 10px;
 	}
 	.popupWrap > p > span{
 		cursor: pointer;
 		font-size: 14px;
 		color: #fff;
 		letter-spacing: 1px;
-		padding: 0 12x;
+		padding: 10px 16px;
 	}
 	.popupWrap > p > span:hover{
 		color: blue;
