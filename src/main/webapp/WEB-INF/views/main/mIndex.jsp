@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=1"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.rwdImageMaps.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Global site tag (gtag.js) - Google Ads: 1032140496 -->
@@ -53,6 +54,34 @@
 		width:100%;
 		margin:0 auto;
 		padding-top:52px;
+		position: relative;
+	}
+	.popupWrap{
+		width: 100%;
+		position: fixed;
+		top: 51px;
+		left: 0px;
+		z-index: 1;
+	}
+	.popupWrap > img{
+		width: 100%;
+	}
+	.popupWrap > p{
+		width: 100%;
+		border-top: 1px solid lightgray;
+		background: #aaa;
+		text-align: right;
+		padding: 5px 10px;
+	}
+	.popupWrap > p > span{
+		cursor: pointer;
+		font-size: 14px;
+		color: #fff;
+		letter-spacing: 1px;
+		padding: 0 12x;
+	}
+	.popupWrap > p > span:hover{
+		color: blue;
 	}
 	footer{
 		width:100%;
@@ -416,6 +445,12 @@
 				return false;
 			}
 		});
+		
+		$(".p_close_btn").click(function(){
+			$(this).parent().parent().css("display","none");
+		});
+		
+		$("img[usemap]").rwdImageMaps();
 	});
 </script>
 </head>
@@ -424,6 +459,15 @@
 		<jsp:include page="../include/mHeader.jsp"></jsp:include>
 	</header>
 	<section id="main">
+		<div class="popupWrap">
+			<img src="${pageContext.request.contextPath}/resources/popup/popup20190828.jpg" usemap="#popup20190828">
+			<map id="popup20190828" name="popup20190828">
+				<area shape="rect" alt="" title="" coords="55,67,389,128" href="tel:1588-0112" target="" />
+				<area shape="rect" alt="" title="" coords="154,414,344,458" href="tel:1588-6851" target="" />
+				<area shape="rect" alt="" title="" coords="151,513,345,559" href="tel:1588-0112" target="" />
+			</map>
+			<p><span class="p_close_btn">닫기</span></p>
+		</div>
 		<div class="mainSlider">
 			<div class="mainSlider1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider11.jpg"></div>
 			<div class="mainSlider2"><a href="${pageContext.request.contextPath}/mMenu3_1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>

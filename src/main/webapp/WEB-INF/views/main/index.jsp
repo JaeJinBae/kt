@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=1"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.rwdImageMaps.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <meta name="viewport" content="">
 <!-- Global site tag (gtag.js) - Google Ads: 1032140496 -->
@@ -65,6 +66,33 @@ function gtag_report_conversion(url) {
 		top:128px;
 		z-index: 2;
 		/* margin-bottom:30px; */
+	}
+	.popupWrap{
+		width: 400px;
+		position: fixed;
+		top: 130px;
+		left: 250px;
+		z-index: 9999;
+	}
+	.popupWrap > img{
+		width: 100%;
+	}
+	.popupWrap > p{
+		width: 100%;
+		border-top: 1px solid lightgray;
+		background: #aaa;
+		text-align: right;
+		padding: 5px 10px;
+	}
+	.popupWrap > p > span{
+		cursor: pointer;
+		font-size: 13px;
+		color: #fff;
+		letter-spacing: 1px;
+		padding: 0 10px;
+	}
+	.popupWrap > p > span:hover{
+		color: blue;
 	}
 	footer{
 		width:100%;
@@ -363,6 +391,7 @@ function gtag_report_conversion(url) {
 	.bottom > ul > li:first-child > img{
 		margin-top:10px;
 	}
+	
 </style>
 <script>
 	$(function(){
@@ -440,6 +469,11 @@ function gtag_report_conversion(url) {
 				$("a").attr("href","#none");
 			}
 		}); */
+		$(".p_close_btn").click(function(){
+			$(this).parent().parent().css("display","none");
+		});
+		
+		$("img[usemap]").rwdImageMaps();
 	});
 </script>
 </head>
@@ -448,6 +482,15 @@ function gtag_report_conversion(url) {
 		<jsp:include page="../include/pHeader.jsp"></jsp:include>
 	</header>
 	<section>
+		<div class="popupWrap">
+			<img src="${pageContext.request.contextPath}/resources/popup/popup20190828.jpg" usemap="#popup20190828">
+			<map id="popup20190828" name="popup20190828">
+				<area shape="rect" alt="" title="" coords="55,67,389,128" href="tel:1588-0112" target="" />
+				<area shape="rect" alt="" title="" coords="154,414,344,458" href="tel:1588-6851" target="" />
+				<area shape="rect" alt="" title="" coords="151,513,345,559" href="tel:1588-0112" target="" />
+			</map>
+			<p><span class="p_close_btn">닫기</span></p>
+		</div>
 		<div class="mainSlider">
 			<div class="mainSlider1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider11.jpg"></div>
 			<div class="mainSlider2"><a href="${pageContext.request.contextPath}/menu3_1"><img src="${pageContext.request.contextPath}/resources/images/mainSlider22.jpg"></a></div>
