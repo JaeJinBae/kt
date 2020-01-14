@@ -59,7 +59,7 @@
 	</div>
 	<div class="logoDiv">
 		<img src="${pageContext.request.contextPath}/resources/images/bottom_logo2.png">
-		<p>케이티텔레캅 온라인 상담센터</p>
+		<p>공식 대리점 (주)수시큐리티</p>
 	</div>
 	<div class="txtDiv">
 		<p>상호 : 주식회사 수시큐리티 / 사업자등록번호 : 404-88-00059</p>
