@@ -103,7 +103,7 @@ public class HomeController {
 		try {
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(user));
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress("soosecurity@naver.com"));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress("ann@soocompany.com"));
 
 			// Subject
 			String subject = "케이티텔레캅 고객 간편상담신청입니다.";
@@ -435,7 +435,7 @@ public class HomeController {
 		try {
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(user));
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress("soosecurity@naver.com"));
+			message.addRecipient(Message.RecipientType.TO, new InternetAddress("ann@soocompany.com"));
 
 			// Subject
 			String subject = "케이티텔레캅 고객 간편상담신청입니다.";
