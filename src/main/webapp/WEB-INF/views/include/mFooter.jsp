@@ -61,7 +61,7 @@
 		<p>상호 : 주식회사 수시큐리티 / 사업자등록번호 : 404-88-00059</p>
 		<!-- <p>통신판매업신고번호: 제 2018-대구달서-0794 호 <a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&apv_perm_no=2018347017830200793&pageUnit=10&searchCnd=wrkr_no&searchKrwd=6572900791&pageIndex=1">(사업자정보확인)</a></p>http://www.ftc.go.kr/bizCommPop.do?wrkr_no=6572900791 -->
 		<p>대표 : 장성운 / 대표번호 : 1588-6851</p>
-		<p>E-mail : soosecurity@naver.com</p>
+		<p>E-mail : martin@soocompany.com</p>
 		<p>소재지 : 대구광역시 중구 국채보상로 150길 65-29(삼덕동)</p>
 		<p>CopyrightⓒSOOSECURITY.Inc. All Rights Reserved</p>
 	</div>
